@@ -19,5 +19,10 @@ namespace ASP.NET_Core_MVC_View_Product.Controllers
             var products = _repo.GetAllProducts();
             return View(products);
         }
+        public IActionResult ViewProduct(int id)
+        {
+            var product = _repo.GetProduct(id);
+            return View(product);
+        }
     }
 }
