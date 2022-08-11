@@ -1,6 +1,13 @@
 ﻿@model IEnumerable<Product>
 
 <h2>Products</h2>
+<br />
+
+   <div style="display: block">
+     <a href="/Product/InsertProduct/">Create a New Product</a>
+ </div>
+ <br />
+
 <table class="table">
     <tr>
         <th>ID</th>
@@ -10,7 +17,7 @@
         <th>On Sale</th>
         <th>Stock Level</th>
     </tr>
-
+    <br />
     @foreach (var product in Model)
     {
         <tr>
@@ -22,5 +29,5 @@
             <td>@product.StockLevel</td>
         </tr>
     }
-
+     <br />
 </table>

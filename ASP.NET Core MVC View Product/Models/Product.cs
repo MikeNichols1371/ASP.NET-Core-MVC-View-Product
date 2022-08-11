@@ -1,4 +1,6 @@
-﻿namespace ASP.NET_Core_MVC_View_Product.Models
+﻿using Testing.Models;
+
+namespace ASP.NET_Core_MVC_View_Product.Models
 {
     public class Product
     {
@@ -13,5 +15,6 @@
         public int CategoryID { get; set; }
         public int OnSale { get; set; }
         public int StockLevel { get; set; }
+        public IEnumerable<Category> Categories { get; set; }
     }
 }
