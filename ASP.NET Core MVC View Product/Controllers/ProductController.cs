@@ -50,5 +50,10 @@ namespace ASP.NET_Core_MVC_View_Product.Controllers
             _repo.InsertProduct(productToInsert);
             return RedirectToAction("Index");
         }
+        public IActionResult DeleteProduct(Product product)
+        {
+            _repo.DeleteProduct(product);
+            return RedirectToAction("Index");
+        }
     }
 }
